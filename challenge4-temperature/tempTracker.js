@@ -1,8 +1,9 @@
 const temps = [];
 
+let sum = 0
 export function addTemperature(temp) {
     temps.push(temp);
-    const sum = temps.forEach(t => sum + t);
+    sum += temp;
     const avg = sum / temps.length;
     console.log(`Average temperature: ${avg}`);
 }
